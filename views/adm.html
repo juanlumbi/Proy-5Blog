@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrador del Blog</title>
+  <link rel="stylesheet" href="../styles/adm.css">
+
+</head>
+
+<body>
+
+
+  <form id="login-form">
+
+    <h1 id="titulo-login">Iniciar sesión</h1>
+
+    <label for="username">Nombre de usuario:</label>
+    <input type="text" id="username" placeholder="Nombre de usuario" required><br />
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" placeholder="Contraseña" required><br />
+    <button type="submit">Ingresar</button>
+
+  </form>
+
+
+  <div id="admin-content" style="display: none">
+
+    <h1>Área del Administrador</h1>
+
+    <form id="item-form">
+
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" required /><br />
+      <label for="imagen">Imagen:</label>
+      <input type="file" id="imagen" name="imagen" accept="image/*" required /><br />
+      <label for="descripcion">Descripción:</label><br />
+      <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br />
+
+      <button type="button" id="agregar-item" onclick="agregarItem()">
+        Agregar
+      </button>
+    </form>
+
+    <form id="modificar-form" style="display: none">
+      <label for="titulo-modificar">Título:</label>
+      <input type="text" id="titulo-modificar" name="titulo-modificar" required /><br />
+      <label for="imagen-modificar">Imagen:</label>
+      <input type="file" id="imagen-modificar" name="imagen-modificar" accept="image/*" /><br />
+      <label for="descripcion-modificar">Descripción:</label><br />
+      <textarea id="descripcion-modificar" name="descripcion-modificar" rows="4" cols="50" required></textarea><br />
+      <button type="button" id="guardar-cambios"> Guardar Cambios </button>
+    </form>
+
+    <ul id="lista-items" class="listas-admin"></ul>
+
+  </div>
+  <script src="/scripts/adm.js"></script>
+</body>
+
+</html>
