@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Style.css">
-</head>
-<body>
-    
+    <script></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Blog Jurídico</title>
+    <link rel="stylesheet" href="styles/index.css">
 
-    <script src="Scrip.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-...." crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container-img-search-icon">
+
+            <img class="container-img-search-icon__img" src="img/logo-2.png" alt="">
+
+            <div class="container-img-search-icon container-img-search-icon__container-search-icon">
+
+                <form action="#" method="get" class="search-form">
+                    <input type="search" name="search" placeholder="Buscar" class="search-input" />
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+                <i class="fa-brands fa-twitter" style="color: red;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: red;"></i>
+                <i class="fa-brands fa-instagram" style="color: red;"></i>
+                <i class="fa-brands fa-snapchat" style="color: red;"></i>
+                <i class="fa-brands fa-youtube" style="color: red;"></i>
+
+            </div>
+
+            </nav>
+
+    </header>
+
+    <nav>
+
+        <ul>
+            <li><a onclick="cargarContenido('views/welcome.html','container')">BIENVENIDOS</a></li>
+            <li><a onclick="cargarContenido('views/blog.html','container')">BLOG</a></li>
+            <!-- <li><a onclick="loadSubPage('services.html')">SERVICIOS JURÍDICOS</a></li>
+            <li><a onclick="loadSubPage('bulletin.html')">BOLETÍN</a></li>  -->
+            <li><a onclick="cargarContenido('views/adm.html','container')">ADMINISTRADOR</a></li>
+        </ul>
+
+    </nav>
+
+    <ul id="container"></ul>
+
+    <footer>
+
+        <div class="data">
+            <h2>Contáctanos</h2>
+            <p>Si usted desea una atención personalizada de su asunto legal en la administración pública o privada.
+                Puede llamar, y con gusto le atenderemos sobre su inquietud.</p>
+            <a href="#"><i class="fa fa-phone"></i>62 40 89 327</a>
+            <a href="#"><i class="fa fa-envelope"></i>consultajuridica@gmail.com</a>
+            <p>©CONSULTORÍA Y GESTIÓN JURÍDICA - ABOGADOS <br> 06800 Mérida (España)</p>
+            <p>POLÍTICA DE COOKIES | POLÍTICA DE PRIVACIDAD | POLÍTICA DE PROTECCIÓN DE DATOS | AVISO LEGAL | CONTACTO
+            Diseño: J.P.L.P | Programación: J.P.L.P</p>
+        </div>
+
+        <div class="data">
+            <form action="https://formsubmit.co/JuanMS10@gmail.com" method="POST">
+                <input type="text" name="nombre" placeholder="Ingresa tu Nombre" class="campo">
+                <input type="email" name="email" placeholder="Ingresa tu Email" class="campo">
+                <textarea name="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+                <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">
+            </form>
+        </div>
+
+    </footer>
+
+    <script src="scripts/index.js"></script>
+
 </body>
+
 </html>

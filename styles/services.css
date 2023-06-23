@@ -1,0 +1,45 @@
+.menu>li>a {
+  padding: 10px 120px;
+  color: #f21818;
+  font-family: JollyLodger-Regular;
+  font-size: 1.438rem;
+  text-decoration: underline;
+  border: 1px solid black;
+}
+
+/* Submenu*/
+
+.submenu {
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.submenu li a {
+  display: block;
+  padding: 0.938rem;
+  color: #f21818;
+  font-family: JollyLodger-Regular;
+  font-size: 18px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  transition: all 0.1s;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+#content {
+  padding: 20px;
+}

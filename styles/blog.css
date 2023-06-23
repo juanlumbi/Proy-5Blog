@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="button"] {
+    background-color: #de0a0a;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+input[type="button"]:hover {
+    background-color: #d50909;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+li {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li:nth-child(4n) {
+    margin-right: 0;
+}
+h2 {
+    margin-top: 0;
+}
+img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    li {
+        width: 100%;
+        display: flexbox
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Item {
+    width: 32%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.Item:hover {
+    background-color: #b4cdf5;
+}
+
+.Item h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.Item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.Item p {
+    font-size: 14px;
+    margin-bottom: 50px;
+}

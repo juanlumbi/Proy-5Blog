@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    background-color: #f21818;
+    color: white;
+    border: none;
+}
+
+#message {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
